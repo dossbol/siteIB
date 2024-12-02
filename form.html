@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>Обратная связь</title>
+		</head>
+		<body>
+			<br/>
+			<?= $msg_box; ?>
+			<br/>
+			<form action="index.php" method="post" name="frm_feedback">
+				<label>Ваше имя:</label><br/>
+				<input type="text" name="user_name" /><br/>
+
+				<label>Ваш e-mail:</label><br/>
+				<input type="text" name="user_email" /><br/>
+
+				<label>Текст сообщения:</label><br/>
+				<textarea name="text_comment"></textarea>
+
+				<br/>
+				<input type="submit" value="Отправить" name="btn_submit" />
+			</form>
+		</body>
+	</html>
